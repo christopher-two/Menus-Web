@@ -1,0 +1,207 @@
+.container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: flex-start;
+  /* Align logo to start */
+  align-items: baseline;
+  padding: 40px 60px;
+  max-width: 1200px;
+  /* Match menu content width */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 5rem;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* Main Layout */
+.main-content {
+  display: block;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+.menu-content {
+  padding: 0 60px 80px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* Center the content block, but text aligns left inside */
+}
+
+.menu-title {
+  font-size: 8rem;
+  font-weight: 300;
+  margin-bottom: 60px;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+
+.menu-section {
+  margin-bottom: 80px;
+}
+
+.menu-section h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+  color: #222;
+  font-weight: 500;
+}
+
+/* Menu Items */
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.menu-item {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 25px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.item-desc {
+  font-size: 1rem;
+  color: #444;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Footer style logic for logo */
+.footer {
+  padding: 80px 0;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.developed-by {
+  font-size: 0.8rem;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.logo-icon {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.logo-icon span {
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+  border-radius: 50% 50% 0 50%;
+  transform: rotate(45deg);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .menu-content {
+    padding: 60px;
+  }
+
+  .header {
+    padding: 30px 60px;
+  }
+
+  .menu-title {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px;
+    justify-content: center;
+    /* Center logo on very small screens if desired, or keep flex-start */
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  .menu-content {
+    padding: 40px 20px;
+  }
+
+  .menu-title {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    word-break: break-word;
+  }
+
+  .menu-section {
+    margin-bottom: 50px;
+  }
+
+  .menu-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .menu-item {
+    padding-bottom: 20px;
+  }
+
+  .menu-list {
+    gap: 30px;
+  }
+
+  .item-header {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+
+  .item-header .item-price {
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+  }
+}
